@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {useNavigate, useParams} from 'react-router-dom';
 import {X, MoreHorizontal, Heart, Send, ChevronLeft, ChevronRight} from 'lucide-react';
-import apiService, {API_BASE_URL} from "../service/apiService";
+import apiService from "../service/apiService";
 import {formatDate, getImageUrl} from "../service/commonService";
 
 // story 의 경우 상대방의 스토리를 다른 유저가 선택해서 보는 것이 아니라

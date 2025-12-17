@@ -11,7 +11,6 @@ import MyFeedPage from "./pages/MyFeedPage";
 import StoryDetail from "./pages/StoryDetail";
 import EditProfilePage from "./pages/EditProfilePage";
 import KaKaoCallback from "./pages/KaKaoCallback";
-import PostDetailModal from "./components/PostDetailModal";
 import PostDetailPage from "./pages/PostDetailPage";
 
 

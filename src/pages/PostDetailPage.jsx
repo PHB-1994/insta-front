@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {X, Heart, MessageCircle, Send, Bookmark, Trash2} from 'lucide-react';
+import {Heart, MessageCircle, Send, Bookmark, Trash2} from 'lucide-react';
 import {getImageUrl} from '../service/commonService';
 import Header from "../components/Header";
 import PostDetailModal from "../components/PostDetailModal";

@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import Header from '../components/Header';
-import {Grid, Bookmark, Settings} from 'lucide-react';
+import {Grid, Bookmark} from 'lucide-react';
 import apiService from "../service/apiService";
 import {useNavigate} from "react-router-dom";
 import {getImageUrl} from "../service/commonService";
