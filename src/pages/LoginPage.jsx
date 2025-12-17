@@ -15,7 +15,7 @@ import apiService from '../service/apiService';
 
 const LoginPage = () => {
 
-    const [username, setUsername] = useState('');
+    // const [username, setUsername] = useState('');
     const [userEmail, setUserEmail] = useState('');
     const [password, setPassword] = useState('');
     const [loading, setLoading] = useState(false);
@@ -32,7 +32,7 @@ const LoginPage = () => {
     const handleLogin = async () => {
         // TODO: 함수를 완성하세요
         try {
-            const res = await apiService.login(userEmail, password);
+            await apiService.login(userEmail, password);
             alert("로그인 성공!");
             navigate("/feed");
 

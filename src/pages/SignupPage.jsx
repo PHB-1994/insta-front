@@ -50,7 +50,7 @@ const SignupPage = () => {
     const handleSignup = async () => {
         // TODO: 함수를 완성하세요
         try {
-            const response = await apiService.signup(username, email, password, fullName);
+            await apiService.signup(username, email, password, fullName);
             alert("회원가입이 완료되었습니다. 로그인해주세요");
             navigate("/login");
 

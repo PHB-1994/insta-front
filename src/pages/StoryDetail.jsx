@@ -15,7 +15,7 @@ const StoryDetail = () => {
     const [stories, setStories] = useState([]);
     const [currnetIndex, setCurrnetIndex] = useState(0);
     const [loading, setLoading] = useState(true);
-    const [message, setMessage] = useState('');
+    // const [message, setMessage] = useState('');
     const [showDeleteModal, setShowDeleteModal] = useState(false);
 
     // userId -> storyId

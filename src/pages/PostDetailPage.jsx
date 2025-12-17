@@ -64,33 +64,33 @@ const PostDetailPage = () => {
         try{
             console.log("postId : ", postId);
             console.log("commentText : ", commentText);
-            const res = await apiService.createComment(postId, commentText);
+            await apiService.createComment(postId, commentText);
             alert("댓글이 성공적으로 등록되었습니다.");
         } catch(err){
             alert("댓글 등록에 실패했습니다.");
         }
     }
 
-    const handleShare = async () => {
-        const shareUrl = `${window.location.origin}/post/${post.postId}`;
-
-        if (navigator.share) {
-            try {
-                await navigator.share({
-                    title: `${post.userName}의 게시물`,
-                    text: post.postCaption,
-                    url: shareUrl
-                });
-            } catch (err) {
-                if (err.name !== 'AbortError') {
-                    copyToClipboard(shareUrl);
-                }
-            }
-        } else {
-            copyToClipboard(shareUrl);
-
-        }
-    };
+    // const handleShare = async () => {
+    //     const shareUrl = `${window.location.origin}/post/${post.postId}`;
+    //
+    //     if (navigator.share) {
+    //         try {
+    //             await navigator.share({
+    //                 title: `${post.userName}의 게시물`,
+    //                 text: post.postCaption,
+    //                 url: shareUrl
+    //             });
+    //         } catch (err) {
+    //             if (err.name !== 'AbortError') {
+    //                 copyToClipboard(shareUrl);
+    //             }
+    //         }
+    //     } else {
+    //         copyToClipboard(shareUrl);
+    //
+    //     }
+    // };
     const copyToClipboard = (text) => {
         navigator.clipboard.writeText(text).then(() => {
             alert('링크가 클립보트에 복사되었습니다.');

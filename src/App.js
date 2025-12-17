@@ -16,21 +16,21 @@ import PostDetailPage from "./pages/PostDetailPage";
 
 function App() {
 
-    const [user, setUser] = useState(() => {
-        try {
-            const savedUser = localStorage.getItem("user");
-            const token = localStorage.getItem("token");
-
-            if (savedUser && token) {
-                return JSON.parse(savedUser);
-            }
-            return null;
-        } catch (err) {
-            localStorage.removeItem("user");
-            localStorage.removeItem("token");
-            return null;
-        }
-    })
+    // const [user, setUser] = useState(() => {
+    //     try {
+    //         const savedUser = localStorage.getItem("user");
+    //         const token = localStorage.getItem("token");
+    //
+    //         if (savedUser && token) {
+    //             return JSON.parse(savedUser);
+    //         }
+    //         return null;
+    //     } catch (err) {
+    //         localStorage.removeItem("user");
+    //         localStorage.removeItem("token");
+    //         return null;
+    //     }
+    // })
 
     return (
         <div>

@@ -15,7 +15,7 @@ const StoryUploadPage = () => {
     const navigate = useNavigate();
 
     // TODO: localStorage에서 user 정보를 가져오세요 (JSON.parse 사용)
-    const user = JSON.parse(localStorage.getItem('user') || []);
+    // const user = JSON.parse(localStorage.getItem('user') || []);
 
     // TODO: handleImageChange 함수를 작성하세요
     // 1. e.target.files[0]으로 파일 가져오기
