@@ -15,8 +15,8 @@ import apiService from '../service/apiService';
 
 const SignupPage = () => {
     const location = useLocation();
-    console.log("kakao email : ", location.state?.email);
-    console.log("kakao email : ", location.state);
+    // console.log("kakao email : ", location.state?.email);
+    // console.log("kakao email : ", location.state);
     const navigate = useNavigate();
 
     const [username, setUsername] = useState('');
