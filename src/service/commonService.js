@@ -1,4 +1,4 @@
-export const API_BASE_URL = "http://localhost:9000";
+export const API_BASE_URL = "http://3.38.174.171:9000";
 
 /**
  * 이미지 경로를 받아서 완전한 URL을 반환하는 함수
